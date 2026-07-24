@@ -1,41 +1,24 @@
 const games = [
-
     {
-
         name: "Love Snake",
-
         icon: "🐍",
-
         description:
             "Collect the hearts and grow your love 💕",
-
         link:
             "https://YOUR-USERNAME.github.io/love-snake/",
-
         available: true
-
     },
-
     {
-
         name: "Card Combine",
-
         icon: "🃏",
-
         description:
             "Combine the cards and discover something special 💌",
-
         link:
             "#",
-
         available: false
-
     },
-
     {
-
         name: "Block Blast",
-
         icon: "🧱",
 
         description:
