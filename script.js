@@ -5,7 +5,7 @@ const games = [
         description:
             "Collect the hearts and grow your love 💕",
         link:
-            "https://github.com/ruzrun/snake-game/",
+            "https://ruzrun.github.io/snake-game/",
         available: true
     },
     {
