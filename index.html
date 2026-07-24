@@ -3,67 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raa's Little Arcade 🎮</title>
+
+    <title>Raa's Arcade 🎮</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="page">
-        <h1>Raa's Little Arcade 🎮</h1>
+    <div class="background-hearts">
 
-        <p class="subtitle">
-            A little place for a little fun 💕
-        </p>
-
-        <div class="game-list">
-
-            <div class="game-card">
-                <div class="game-icon">🐍</div>
-
-                <div class="game-info">
-                    <h2>Love Snake</h2>
-                    <p>Collect all the hearts 💕</p>
-                </div>
-
-                <button onclick="openGame('snake')">
-                    PLAY
-                </button>
-            </div>
-
-            <div class="game-card coming-soon">
-                <div class="game-icon">🃏</div>
-
-                <div class="game-info">
-                    <h2>Card Combine</h2>
-                    <p>Coming soon 💌</p>
-                </div>
-
-                <button disabled>
-                    SOON
-                </button>
-            </div>
-
-            <div class="game-card coming-soon">
-                <div class="game-icon">🧱</div>
-
-                <div class="game-info">
-                    <h2>Heart Blast</h2>
-                    <p>Coming soon 💕</p>
-                </div>
-
-                <button disabled>
-                    SOON
-                </button>
-            </div>
-
-        </div>
-
-        <button class="back-button" onclick="backToLetters()">
-            ← Back to Precious Letter
-        </button>
+        <span>💕</span>
+        <span>💗</span>
+        <span>💖</span>
+        <span>💘</span>
+        <span>💝</span>
+        <span>💕</span>
+        <span>💗</span>
+        <span>💖</span>
 
     </div>
 
+    <main class="arcade-container">
+
+        <header class="arcade-header">
+
+            <p class="small-title">
+                WELCOME TO
+            </p>
+
+            <h1>
+                Raa's Arcade 🎮
+            </h1>
+
+            <p class="subtitle">
+                A little place made just for you 💕
+            </p>
+
+        </header>
+
+        <section class="welcome-card">
+
+            <div class="controller">
+                🎮
+            </div>
+
+            <h2>
+                Choose Your Game
+            </h2>
+
+            <p>
+                Take a little break and play something made with love 💌
+            </p>
+
+        </section>
+
+        <section
+            class="games-container"
+            id="gamesContainer">
+
+        </section>
+
+        <footer>
+
+            <p>
+                Made with love for Raa 💕
+            </p>
+
+            <p class="footer-small">
+                More games coming soon...
+            </p>
+
+        </footer>
+
+    </main>
+
     <script src="script.js"></script>
+
 </body>
 </html>
