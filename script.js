@@ -1,6 +1,6 @@
 function openGame(game) {
     if (game === "snake") {
-        window.location.href = "games/snake/";
+        window.location.href = "https://github.com/ruzrun/snake-game.git";
     }
 }
 
