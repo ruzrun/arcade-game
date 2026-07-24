@@ -1,9 +1,201 @@
-function openGame(game) {
-    if (game === "snake") {
-        window.location.href = "https://github.com/ruzrun/snake-game.git";
-    }
-}
+const games = [
 
-function backToLetters() {
-    window.location.href = "https://YOUR-PRECIOUS-LETTER-WEBSITE.github.io";
+    {
+
+        name: "Love Snake",
+
+        icon: "🐍",
+
+        description:
+            "Collect the hearts and grow your love 💕",
+
+        link:
+            "https://YOUR-USERNAME.github.io/love-snake/",
+
+        available: true
+
+    },
+
+    {
+
+        name: "Card Combine",
+
+        icon: "🃏",
+
+        description:
+            "Combine the cards and discover something special 💌",
+
+        link:
+            "#",
+
+        available: false
+
+    },
+
+    {
+
+        name: "Block Blast",
+
+        icon: "🧱",
+
+        description:
+            "Place the blocks and clear the board ⭐",
+
+        link:
+            "#",
+
+        available: false
+
+    }
+
+];
+
+const gamesContainer =
+
+    document.getElementById(
+
+        "gamesContainer"
+
+    );
+
+games.forEach(
+
+    function(game, index) {
+
+        const card =
+
+            document.createElement(
+
+                "a"
+
+            );
+
+        card.classList.add(
+
+            "game-card"
+
+        );
+
+        card.style.animationDelay =
+
+            `${index * 0.15}s`;
+
+        if (
+
+            game.available
+
+        ) {
+
+            card.href =
+
+                game.link;
+
+        } else {
+
+            card.href =
+
+                "#";
+
+            card.classList.add(
+
+                "coming-soon"
+
+            );
+
+            card.addEventListener(
+
+                "click",
+
+                function(event) {
+
+                    event.preventDefault();
+
+                    showComingSoon();
+
+                }
+
+            );
+
+        }
+
+        card.innerHTML = `
+
+            <div class="game-icon">
+
+                ${game.icon}
+
+            </div>
+
+            <h2>
+
+                ${game.name}
+
+            </h2>
+
+            <p>
+
+                ${game.description}
+
+            </p>
+
+            <div class="play-button">
+
+                ${
+
+                    game.available
+
+                        ? "Play Game →"
+
+                        : "Coming Soon ✨"
+
+                }
+
+            </div>
+
+        `;
+
+        gamesContainer.appendChild(
+
+            card
+
+        );
+
+    }
+
+);
+
+function showComingSoon() {
+
+    const messages = [
+
+        "This game is still being created 💕",
+
+        "Coming soon for you 💌",
+
+        "Be patient, little gamer 🥰",
+
+        "I am still making this one ⭐"
+
+    ];
+
+    const randomMessage =
+
+        messages[
+
+            Math.floor(
+
+                Math.random() *
+
+                messages.length
+
+            )
+
+        ];
+
+    alert(
+
+        randomMessage
+
+    );
+
 }
