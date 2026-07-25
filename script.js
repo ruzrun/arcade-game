@@ -1,3 +1,28 @@
+// Audio files
+  const audioFiles = [
+    "audio/audio.mp3",
+    "audio/audio2.mp3",
+    "audio/audio3.mp3",
+    "audio/audio4.mp3",
+    "audio/audio5.mp3"
+  ];
+
+  let currentAudioIndex = 0;
+  const audio = new Audio(audioFiles[currentAudioIndex]);
+
+  audio.addEventListener("ended", () => {
+    currentAudioIndex++;
+
+    if (currentAudioIndex >= audioFiles.length) {
+      currentAudioIndex = 0;
+    }
+
+    audio.src = audioFiles[currentAudioIndex];
+    audio.play();
+  });
+
+
+//Game section
 const games = [
     {
         name: "Love Snake",
