@@ -2,24 +2,9 @@
 //Music from #Uppbeat (free for Creators!):
 //https://uppbeat.io/t/pecan-pie/pixel-drift
 //License code: IZBJTD93LYKHZP9K
-  const audioFiles = [
-    "audio/game.mp3",
-    "audio/game2.mp3"
-  ];
-
-  let currentAudioIndex = 0;
-  const audio = new Audio(audioFiles[currentAudioIndex]);
-
-  audio.addEventListener("ended", () => {
-    currentAudioIndex++;
-
-    if (currentAudioIndex >= audioFiles.length) {
-      currentAudioIndex = 0;
-    }
-
-    audio.src = audioFiles[currentAudioIndex];
-    audio.play();
-  });
+  // Prepare audio 
+const audio = new Audio("audio/game.mp3");
+audio.loop = true; // audio akan repeat
 
 
 //Game section
