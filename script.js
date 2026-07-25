@@ -3,12 +3,22 @@
 //https://uppbeat.io/t/pecan-pie/pixel-drift
 //License code: IZBJTD93LYKHZP9K
   // Prepare audio 
-const audio =
-    new Audio(
-        "audio/game.mp3"
-    );
+const audio = new Audio(
+    "./audio/game.mp3"
+);
+
 audio.loop = true;
-audio.play();
+
+audio.play()
+    .then(() => {
+        console.log("Audio started successfully");
+    })
+    .catch((error) => {
+        console.log(
+            "Autoplay was blocked:",
+            error
+        );
+    });
 
 //Game section
 const games = [
