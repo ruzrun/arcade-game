@@ -37,7 +37,7 @@ const games = [
         description:
             "Place the blocks and clear the board ⭐",
         link:
-            "//https://ruzrun.github.io/Block-Blast/",//https://ruzrun.github.io/Block-Blast/
+            "https://ruzrun.github.io/Block-Blast/",//https://ruzrun.github.io/Block-Blast/
         available: true
     },
       {
