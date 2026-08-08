@@ -3,22 +3,54 @@
 //https://uppbeat.io/t/pecan-pie/pixel-drift
 //License code: IZBJTD93LYKHZP9K
   // Prepare audio 
-const audio = new Audio(
-    "./audio/game.mp3"
-);
+const audio = new Audio("./audio/game.mp3");
 
 audio.loop = true;
+audio.volume = 0.5;
 
+let musicEnabled = true;
+
+const musicButton = document.getElementById("musicButton");
+
+// Try to start music
 audio.play()
-    .then(() => {
-        console.log("Audio started successfully");
-    })
-    .catch((error) => {
-        console.log(
-            "Autoplay was blocked:",
-            error
-        );
-    });
+.then(() => {
+console.log("Music started successfully");
+})
+.catch((error) => {
+console.log("Autoplay was blocked:", error);
+
+    // Browser blocked autoplay,
+    // so wait for the user to interact.
+    musicButton.textContent = "🎵 Start Music";
+});
+
+// Music ON / OFF
+musicButton.addEventListener("click", function () {
+
+if (musicEnabled) {
+
+    // Turn music OFF
+    musicEnabled = false;
+    audio.pause();
+
+    musicButton.textContent = "🔇 Music Off";
+
+} else {
+
+    // Turn music ON
+    musicEnabled = true;
+
+    audio.play()
+        .then(() => {
+            musicButton.textContent = "🎵 Music On";
+        })
+        .catch((error) => {
+            console.log("Could not start music:", error);
+        });
+}
+
+});
 
 //Game section
 const games = [
