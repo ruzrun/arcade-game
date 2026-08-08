@@ -31,6 +31,24 @@ const games = [
             "https://ruzrun.github.io/snake-game/",
         available: true
     },
+   {
+        name: "Block Blast",
+        icon: "🧱",
+        description:
+            "Place the blocks and clear the board ⭐",
+        link:
+            "//https://ruzrun.github.io/Block-Blast/",//https://ruzrun.github.io/Block-Blast/
+        available: true
+    },
+     {
+        name: "Tetris",
+        icon: "🎮",
+        description:
+            "Stack the blocks, clear the lines, and beat your high score! 🧱✨",
+        link:
+            "https://ruzrun.github.io/Tetris/",
+        available: false
+},
     {
         name: "Card Combine",
         icon: "🃏",
@@ -38,15 +56,6 @@ const games = [
             "Combine the cards and discover something special 💌",
         link:
             "#",
-        available: false
-    },
-    {
-        name: "Block Blast",
-        icon: "🧱",
-        description:
-            "Place the blocks and clear the board ⭐",
-        link:
-            "#",//https://ruzrun.github.io/Block-Blast/
         available: false
     }
 ];
@@ -85,23 +94,30 @@ games.forEach(
             );
         }
         card.innerHTML = `
-            <div class="game-icon">
-                ${game.icon}
-            </div>
-            <h2>
-                ${game.name}
-            </h2>
-            <p>
-                ${game.description}
-            </p>
-            <div class="play-button">
-                ${
-                    game.available
-                        ? "Play Game →"
-                        : "Coming Soon ✨"
-                }
-            </div>
-        `;
+    <div class="game-icon">
+        ${
+            game.iconType === "image"
+                ? `<img src="${game.icon}" alt="${game.name}">`
+                : game.icon
+        }
+    </div>
+
+    <h2>
+        ${game.name}
+    </h2>
+
+    <p>
+        ${game.description}
+    </p>
+
+    <div class="play-button">
+        ${
+            game.available
+                ? "Play Game →"
+                : "Coming Soon ✨"
+        }
+    </div>
+`;
         gamesContainer.appendChild(
             card
         );
