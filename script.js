@@ -42,13 +42,13 @@ const games = [
     },
      {
         name: "Tetris",
-        icon: "🎮",
+        icon: "image/tetris.png",
         description:
             "Stack the blocks, clear the lines, and beat your high score! 🧱✨",
         link:
             "https://ruzrun.github.io/Tetris/",
         available: false
-},
+     },
     {
         name: "Card Combine",
         icon: "🃏",
