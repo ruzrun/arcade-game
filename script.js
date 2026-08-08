@@ -40,6 +40,15 @@ const games = [
             "//https://ruzrun.github.io/Block-Blast/",//https://ruzrun.github.io/Block-Blast/
         available: true
     },
+      {
+        name: "Card Combine",
+        icon: "🃏",
+        description:
+            "Combine the cards and discover something special 💌",
+        link:
+            "#",
+        available: false
+    },
      {
         name: "Tetris",
         icon: "image/tetris.png",
@@ -49,16 +58,8 @@ const games = [
             "https://ruzrun.github.io/Tetris/",
         available: false,
         iconType: "image"
-     },
-    {
-        name: "Card Combine",
-        icon: "🃏",
-        description:
-            "Combine the cards and discover something special 💌",
-        link:
-            "#",
-        available: false
-    }
+     }
+  
 ];
 const gamesContainer =
     document.getElementById(
