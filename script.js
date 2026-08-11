@@ -58,6 +58,16 @@ const games = [
             "https://ruzrun.github.io/Tetris/",
         available: false,
         iconType: "image"
+     },
+    {
+        name: "Tetris 2",
+        icon: "image/tetris2.png",
+        description:
+            "Drop colourful blocks, build your sand, and connect colours wall to wall! 🌈🏖️",
+        link:
+            "https://ruzrun.github.io/Tetris-2/",
+        available: false,
+        iconType: "image"
      }
   
 ];
