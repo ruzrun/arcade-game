@@ -68,7 +68,17 @@ const games = [
             "https://ruzrun.github.io/Tetris-2/",
         available: false,
         iconType: "image"
-     }
+     },
+      {
+        name: "X O X",
+        icon: "image/xox.png",
+        description:
+            "Challenge a friend or beat the smart computer ✨",
+        link:
+            "https://ruzrun.github.io/XO-Game/",
+        available: false,
+        iconType: "image"
+}
   
 ];
 const gamesContainer =
