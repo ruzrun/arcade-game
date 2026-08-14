@@ -40,6 +40,16 @@ const games = [
             "https://ruzrun.github.io/Block-Blast/",//https://ruzrun.github.io/Block-Blast/
         available: true
     },
+   {
+        name: "X O X",
+        icon: "image/xox.png",
+        description:
+            "Challenge a friend or beat the smart computer ✨",
+        link:
+            "https://ruzrun.github.io/XO-Game/",
+        available: true,
+        iconType: "image"
+     },
       {
         name: "2048 Game",
         icon: "image/2048.png",
@@ -69,17 +79,8 @@ const games = [
             "https://ruzrun.github.io/Tetris-2/",
         available: false,
         iconType: "image"
-     },
-      {
-        name: "X O X",
-        icon: "image/xox.png",
-        description:
-            "Challenge a friend or beat the smart computer ✨",
-        link:
-            "https://ruzrun.github.io/XO-Game/",
-        available: false,
-        iconType: "image"
-}
+     }
+      
   
 ];
 const gamesContainer =
