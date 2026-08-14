@@ -42,12 +42,13 @@ const games = [
     },
       {
         name: "2048 Game",
-        icon: "🃏",
+        icon: "image/2048.png",
         description:
             "Combine the numbers and see how far you can go ✨",
         link:
             "https://ruzrun.github.io/2048-Game/",
-        available: false
+        available: false,
+        iconType: "image"
     },
      {
         name: "Tetris",
