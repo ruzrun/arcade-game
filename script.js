@@ -50,16 +50,6 @@ const games = [
         available: true,
         iconType: "image"
      },
-      {
-        name: "2048 Game",
-        icon: "image/2048.png",
-        description:
-            "Combine the numbers and see how far you can go ✨",
-        link:
-            "https://ruzrun.github.io/2048-Game/",
-        available: false,
-        iconType: "image"
-    },
      {
         name: "Tetris",
         icon: "image/tetris.png",
@@ -79,7 +69,17 @@ const games = [
             "https://ruzrun.github.io/Tetris-2/",
         available: false,
         iconType: "image"
-     }
+     },
+    {
+        name: "2048 Game",
+        icon: "image/2048.png",
+        description:
+            "Combine the numbers and see how far you can go ✨",
+        link:
+            "https://ruzrun.github.io/2048-Game/",
+        available: false,
+        iconType: "image"
+    }
       
   
 ];
