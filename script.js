@@ -41,12 +41,12 @@ const games = [
         available: true
     },
       {
-        name: "Card Combine",
+        name: "2048 Game",
         icon: "🃏",
         description:
-            "Combine the cards and discover something special 💌",
+            "Combine the numbers and see how far you can go ✨",
         link:
-            "#",
+            "https://ruzrun.github.io/2048-Game/",
         available: false
     },
      {
