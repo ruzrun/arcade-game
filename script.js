@@ -79,7 +79,28 @@ const games = [
             "https://ruzrun.github.io/2048-Game/",
         available: false,
         iconType: "image"
-    }
+    },
+    {
+    name: "Memory Match",
+    icon: "🃏",
+    description:
+        "Flip the cards, find the pairs, and remember them all 💕",
+    link:
+        "https://ruzrun.github.io/Memory-Match/",
+    available: false
+    /*iconType: "emoji"*/
+},
+
+{
+    name: "Minesweeper",
+    icon: "💣",
+    description:
+        "Clear the board, avoid the mines, and survive 💥",
+    link:
+        "https://ruzrun.github.io/Minesweeper/",
+    available: false
+   /* iconType: "emoji"*/
+}
       
   
 ];
