@@ -100,6 +100,15 @@ const games = [
         "https://ruzrun.github.io/Minesweeper/",
     available: false
    /* iconType: "emoji"*/
+},
+{
+    name: "Solitaire",
+    icon: "🃏",
+    description:
+        "Build your foundations, make your moves, and clear the deck ✨",
+    link:
+        "https://ruzrun.github.io/Solitaire/",
+    available: true
 }
       
   
