@@ -90,7 +90,6 @@ const games = [
     available: false
     /*iconType: "emoji"*/
 },
-
 {
     name: "Minesweeper",
     icon: "💣",
