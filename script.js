@@ -108,7 +108,16 @@ const games = [
         "Build your foundations, make your moves, and clear the deck ✨",
     link:
         "https://ruzrun.github.io/Solitaire/",
-    available: true
+    available: false
+},
+  {
+    name: "Pac-Man",
+    icon: "🟡",
+    description:
+        "Chomp through the maze, collect pellets, and outsmart the ghosts 👻",
+    link:
+        "https://ruzrun.github.io/Pac-Man/",
+    available: false
 }
       
   
