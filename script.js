@@ -57,7 +57,7 @@ const games = [
             "Stack the blocks, clear the lines, and beat your high score! 🧱✨",
         link:
             "https://ruzrun.github.io/Tetris/",
-        available: false,
+        available: true,
         iconType: "image"
      },
     {
