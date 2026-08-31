@@ -67,7 +67,7 @@ const games = [
             "Drop colourful blocks, build your sand, and connect colours wall to wall! 🌈🏖️",
         link:
             "https://ruzrun.github.io/Tetris-2/",
-        available: false,
+        available: true,
         iconType: "image"
      },
     {
