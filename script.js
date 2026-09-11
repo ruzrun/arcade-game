@@ -77,7 +77,7 @@ const games = [
             "Combine the numbers and see how far you can go ✨",
         link:
             "https://ruzrun.github.io/2048-Game/",
-        available: false,
+        available: true,
         iconType: "image"
     },
     {
@@ -87,7 +87,7 @@ const games = [
         "Flip the cards, find the pairs, and remember them all 💕",
     link:
         "https://ruzrun.github.io/Memory-Match/",
-    available: false
+    available: true
     /*iconType: "emoji"*/
 },
 {
@@ -97,7 +97,7 @@ const games = [
         "Clear the board, avoid the mines, and survive 💥",
     link:
         "https://ruzrun.github.io/Minesweeper/",
-    available: false
+    available: true
    /* iconType: "emoji"*/
 },
 {
